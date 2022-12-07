@@ -14,12 +14,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dogImageView.image = #imageLiteral(resourceName: "3")
-        dogImageView.alpha = 0.5
-        
-        
     }
 
 
+    @IBAction func generateButtonPressed(_ sender: UIButton) {
+        print("button got pressed")
+        dogImageView.image = #imageLiteral(resourceName: "3")
+        dogImageView.alpha = 0.5
+    }
 }
 
