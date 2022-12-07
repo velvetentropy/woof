@@ -19,8 +19,9 @@ class ViewController: UIViewController {
 
     @IBAction func generateButtonPressed(_ sender: UIButton) {
         print("button got pressed")
-        dogImageView.image = #imageLiteral(resourceName: "3")
-        dogImageView.alpha = 0.5
+        var images = [#imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "Roxy")]
+        
+        dogImageView.image = images[Int.random(in: 0..<4)]
     }
 }
 
